@@ -24,7 +24,7 @@ public class QuickSort {
     public int[] QS(int a[])
     {
         //if null array
-        if(a.length==0)
+        if(a.length<=1)
             return a;
         a=getPivot(a);
         int pivot=0;                    //always the first element is the pivot
@@ -61,7 +61,7 @@ public class QuickSort {
             }
                     */
             a[x.length]=pVal;
-            System.arraycopy(a, x.length+1, y, 0, y.length);    //copying to second part of array
+            System.arraycopy(y,0, a, x.length+1, y.length);    //copying to second part of array
             /*
             for(int i=x.length+1;i<a.length;i++)
             {
