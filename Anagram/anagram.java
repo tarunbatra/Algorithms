@@ -26,7 +26,6 @@ public class anagram {
         createString(a);
         if(a.length>1)
         {
-            String[] sub=new String[a.length-1];
             for(int i=0;i<a.length;i++)
             {
                 anagram(getSub(a,i));
@@ -62,7 +61,7 @@ public class anagram {
     public int calcSum(String[] ar)
     {
         int sum=0;
-        for (String ar1 : ar)
+        for(String ar1 : ar)
         {
             try
             {
