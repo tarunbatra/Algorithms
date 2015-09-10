@@ -26,7 +26,7 @@ public class Main {
     public static void main(String args[])
     {
         anagram obj=new anagram();
-        String[] arr={"a","b","c","d","e"};
+        String[] arr={"a","b","c"};
         obj.anagram(arr);
         String[] resAr=obj.res.substring(1).split("\\.");
         System.out.println(Arrays.toString(resAr));
