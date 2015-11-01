@@ -22,7 +22,11 @@ package BinaryExponentiation;
 // this class only exists to show the usage of the LeftToRightBinExpo and RightToLeftBinExpo class
 public class Main {
      public static void main(String[] args) {
-        LeftToRightBinExpo obj=new LeftToRightBinExpo();
-        System.out.println(obj.calcL2RBE(5,25));
+         
+        LeftToRightBinExpo obj1=new LeftToRightBinExpo();
+        System.out.println(obj1.power(5,25));
+        
+        RightToLeftBinExpo obj2=new RightToLeftBinExpo();
+        System.out.println(obj2.power(5,25));
     }
 }
