@@ -25,7 +25,7 @@ public class LeftToRightBinExpo {
     
     public BigInteger calcL2RBE(long x,long e)
     {
-        return calcL2RBE(BigInteger.valueOf(x),BigInteger.valueOf(x));
+        return calcL2RBE(BigInteger.valueOf(x),BigInteger.valueOf(e));
     }
     public BigInteger calcL2RBE(BigInteger x,BigInteger e)
     {
