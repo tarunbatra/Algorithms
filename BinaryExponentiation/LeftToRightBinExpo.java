@@ -15,6 +15,7 @@
  */
 package BinaryExponentiation;
 
+import java.math.BigInteger;
 
 /**
  *
@@ -22,9 +23,13 @@ package BinaryExponentiation;
  */
 public class LeftToRightBinExpo {
     
-    public long calcL2RBE(long x,long e)
+    public BigInteger calcL2RBE(long x,long e)
     {
-        long xVal=x;
+        return calcL2RBE(BigInteger.valueOf(x),BigInteger.valueOf(x));
+    }
+    public BigInteger calcL2RBE(BigInteger x,BigInteger e)
+    {
+        BigInteger xVal=x;
         char[] charray=getBinary(e).toCharArray();
         for(int i=0;i<charray.length;i++)
         {
@@ -35,16 +40,16 @@ public class LeftToRightBinExpo {
         return x;
     }
     
-    private String getBinary(long l)
+    private String getBinary(BigInteger l)
     {
-        return Long.toBinaryString(l).substring(1);
+        return l.toString(2).substring(1);
     }
-    private long square(long a)
+    private BigInteger square(BigInteger a)
     {
-        return a*a;
+        return a.multiply(a);
     }
-    private long mul(long a,long b)
+    private BigInteger mul(BigInteger a,BigInteger b)
     {
-        return a*b;
+        return a.multiply(b);
     }
 }
