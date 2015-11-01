@@ -23,11 +23,11 @@ import java.math.BigInteger;
  */
 public class LeftToRightBinExpo {
     
-    public BigInteger calcL2RBE(long x,long e)
+    public BigInteger power(long x,long e)
     {
-        return calcL2RBE(BigInteger.valueOf(x),BigInteger.valueOf(e));
+        return power(BigInteger.valueOf(x),BigInteger.valueOf(e));
     }
-    public BigInteger calcL2RBE(BigInteger x,BigInteger e)
+    public BigInteger power(BigInteger x,BigInteger e)
     {
         BigInteger xVal=x;
         char[] charray=getBinary(e).toCharArray();
